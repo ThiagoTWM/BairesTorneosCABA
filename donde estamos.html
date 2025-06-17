@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baires Torneos CABA - Dónde Estamos</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="/favicon-32x32.png">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Baires Torneos</a>
+        <input type="checkbox" name="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon-action">
+            <div class='bx bx-menu' id="menu-icon"></div>
+        </label>
+        <ul class="navlist">
+            <li><a href="index.html"> Inicio</a></li>
+            <li> <a href="reglas.html"> Reglas</a></li>
+            <li><a href="https://www.dropbox.com/scl/fo/o2wkb76qrq3o68b07x3nb/AOUUnxWpBTzARIdLKiwzSNk?rlkey=6myprjlqx6yq4lftijzhi507s&e=1&st=kbihrztk&dl=0" target="_blank"> Fotos F8</a></li>
+            <li><a href="https://www.dropbox.com/scl/fo/jem7lbmk0hif1ms5y4rjc/AKUFu9VSg9Eb4_0uORITfyQ?rlkey=vfgqpq5b1ljkp943abpii9q72&e=1&st=fyebjqto&dl=0" target="_blank">Fotos F5</a></li>
+            
+        </ul>
+        <div id="loader">
+            <div class="spinner"></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="sedes-container" id="donde-estamos-seccion">
+            <h2>¿Dónde nos encontramos?</h2>
+            <p>¡Vení a vivir la experiencia de Baires Torneos en nuestras diferentes sedes!</p>
+            <p style="margin-bottom: 30px;">Selecciona una modalidad para ver las sedes disponible.</p>
+
+            <div class="botones-sedes">
+                <button class="boton-sede" data-sede="sedeKickFC"> Fútbol 8 </button>
+                <button class="boton-sede" data-sede="sedeOtra"> Fútbol 5</button>
+                </div>
+
+            <div class="mapas-container">
+                <div id="sedeKickFC" class="mapa-sede">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.715276189797!2d-58.51877652514303!3d-34.66189286057129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc8fbc68f302d%3A0x194b33c1da249414!2sKick%20Fc!5e0!3m2!1ses-419!2sar!4v1750048266498!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p style="margin-top: 20px; font-size: 1.1em; text-align: center;">
+
+                    </p>
+                </div>
+
+                <div id="sedeOtra" class="mapa-sede">
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.523179782357!2d-58.51658902514584!3d-34.61621695815689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc82a1c90a699%3A0x43ba90ae3e5dcd32!2sNogoy%C3%A1%205014%2C%20C1417%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1750048400641!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+                        <strong>Modalidades:</strong> Fútbol 5 
+                    </p>
+                </div>
+
+                </div>
+            <p style="margin-top: 40px; font-size: 1.2em; text-align: center;">¡Te esperamos para vivir la pasión de BAIRES!</p>
+        </section>
+    </main>
+
+    <script src="java.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+    
+        document.addEventListener('DOMContentLoaded', function() {
+            const botones = document.querySelectorAll('.boton-sede');
+            const mapas = document.querySelectorAll('.mapa-sede');
+
+            // Función para activar una sede específica
+            function activarSede(sedeId) {
+                // Desactiva todos los botones y mapas
+                botones.forEach(btn => btn.classList.remove('activo'));
+                mapas.forEach(map => map.classList.remove('activo'));
+
+                // Activa el botón y el mapa correspondiente
+                const botonActivo = document.querySelector(`.boton-sede[data-sede="${sedeId}"]`);
+                const mapaActivo = document.getElementById(sedeId);
+
+                if (botonActivo) {
+                    botonActivo.classList.add('activo');
+                }
+                if (mapaActivo) {
+                    mapaActivo.classList.add('activo');
+                }
+            }
+
+    
+            activarSede('sedeKickFC');
+
+
+            botones.forEach(boton => {
+                boton.addEventListener('click', function() {
+                    const sedeId = this.dataset.sede; // Obtiene el ID de la sede del atributo data-sede
+                    activarSede(sedeId); // Llama a la función para activar la sede
+                });
+            });
+        });
+    </script>
+</body>
+<footer>
+    <div class="footer-container">
+       
+
+        <div class="footer-section">
+            <h3>Contacto</h3>
+            <ul>
+                <li><a href="mailto:info@bairestorneos.com">info@bairestorneos.com</a></li>
+                <li><a href="tel:+5491112345678">+54 9 11 5037-0790</a></li>
+                <li><a href="https://wa.me/5491150370790" target="_blank"><i class="ri-whatsapp-fill"></i> WhatsApp</a></li>
+            </ul>
+            <div class="social-icons-footer">
+                <a href="https://www.instagram.com/bairestorneoscaba/" target="_blank"><i class="ri-instagram-fill"></i></a>
+                <a href="https://www.youtube.com/@bairestorneos" target="_blank"><i class="ri-youtube-fill"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-section developer-info">
+            <h3>Desarrollado por</h3>
+            <p> <a href="https://www.instagram.com/thiago._agustiin?igsh=MWk3NG5wODN1cmZ3dw=="target="_blank"><i class="ri-instagram-fill"></i>ThiagoTWM</a></p>
+            <p>© 2025 Baires Torneos CABA.<br> Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reglas - BAIRES TORNEOS CABA</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Baires Torneos</a> <input type="checkbox" name="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon-action">
+            <div class='bx bx-menu' id="menu-icon"></div>
+        </label>
+
+        <ul class="navlist">
+            <li><a href="index.html"> Inicio</a></li>
+            <li><a href="https://www.dropbox.com/scl/fo/o2wkb76qrq3o68b07x3nb/AOUUnxWpBTzARIdLKiwzSNk?rlkey=6myprjlqx6yq4lftijzhi507s&e=1&st=kbihrztk&dl=0" target="_blank"> Fotos F8</a></li>
+            <li><a href="https://www.dropbox.com/scl/fo/jem7lbmk0hif1ms5y4rjc/AKUFu9VSg9Eb4_0uORITfyQ?rlkey=vfgqpq5b1ljkp943abpii9q72&e=1&st=fyebjqto&dl=0" target="_blank">Fotos F5</a></li>
+            <li><a href="donde estamos.html"> ¿Donde estamos?</a></li>
+        </ul>
+        <div id="loader">
+            <div class="spinner"></div>
+        </div>
+    </header>
+
+    <section class="rules-section" style="padding-top: 100px; padding-bottom: 60px; background-color: rgba(0,0,0,0.7); color: white; text-align: center; min-height: 90vh; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <h2 style="font-size: 42px; margin-bottom: 20px; color: #28a745;">Reglamento del Torneo</h2>
+        <p style="font-size: 1.2em; margin-bottom: 30px;">Aca podes consultar las reglas completas de Baires Torneos.</p>
+
+        <div class="pdf-container" style="width: 90%; max-width: 900px; height: 70vh; margin: 0 auto; background-color: rgba(0,0,0,0.5); border-radius: 10px; overflow: hidden; box-shadow: 0 0 20px rgba(0,0,0,0.5);">
+            <iframe src="docs/REGLAMENTOACTUALIZADOTORNEOBAIRES2025(1).pdf"width="100%" height="100%" style="border: none;">
+                <p>Tu navegador no soporta la incrustación de PDF. Puedes <a href="docs/REGLAMENTOACTUALIZADOTORNEOBAIRES2025(1).pdf" target="_blank" style="color: #28a745;">descargar el PDF aquí</a>.</p>
+            </iframe>
+        </div>
+
+        <p style="font-size: 0.9em; margin-top: 20px;">*El PDF puede tardar unos segundos en cargar.</p>
+    </section>
+
+    <div class="icons">
+        </div>
+    <div class="scroll-down">
+        </div>
+
+    <script src="java.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <footer> 
+        <div class="footer-container">
+        <div class="footer-section">
+            <h3>Sedes</h3>
+            <ul>
+                <li><a href="donde estamos.html"target="_blank"><i class="ri-football-fill"></i> Fútbol 8</a></li>
+                <li><a href="donde estamos.html"target="_blank"><i class="ri-football-fill"></i> Fútbol 5</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contacto</h3>
+            <ul>
+                <li><a href="mailto:info@bairestorneos.com">info@bairestorneos.com</a></li>
+                <li><a href="tel:+5491112345678">+54 9 11 5037-0790</a></li>
+                <li><a href="https://wa.me/5491150370790" target="_blank"><i class="ri-whatsapp-fill"></i> WhatsApp</a></li>
+            </ul>
+            <div class="social-icons-footer">
+                <a href="https://www.instagram.com/bairestorneoscaba/?hl=es-la" target="_blank"><i class="ri-instagram-fill"></i></a>
+                <a href="https://www.tiktok.com/@baires.torneos" target="_blank"><i class="ri-tiktok-fill"></i></a>
+                <a href="https://www.youtube.com/@bairestorneos" target="_blank"><i class="ri-youtube-fill"></i></a>
+                </div>
+        </div>
+
+        <div class="footer-section developer-info">
+            <h3>Desarrollado por</h3>
+                       <p> <a href="https://www.instagram.com/thiago._agustiin?igsh=MWk3NG5wODN1cmZ3dw=="target="_blank"><i class="ri-instagram-fill"></i>ThiagoTWM</a></p>
+            <p>&copy; 2025 Baires Torneos CABA.<br> Todos los derechos reservados.</p>
+        </div>
+    </div>
+        </footer>
+</body>
+</html>
