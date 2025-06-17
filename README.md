@@ -1,6 +1,6 @@
 # ⚽ Baires Torneos
 
-🌐 https://bairestorneos.netlify.app
+🌐 [https://bairestorneos.netlify.app] (https://bairestorneoscaba.netlify.app/)
 
 ---
 
