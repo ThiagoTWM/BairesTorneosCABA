@@ -2,19 +2,19 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
     list-style: none;
     text-decoration: none;
 }
 
 body {
-    background-image: url('assets/imgs/sudhanshu-walzade-NGVZJPD3UVw-unsplash.jpg'); 
-    background-size: cover; 
-    background-position: center center; 
-    background-repeat: no-repeat; 
-    background-attachment: fixed; 
+    background-image: url('assets/imgs/sudhanshu-walzade-NGVZJPD3UVw-unsplash.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: white; /* Color global del texto */
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 html {
@@ -41,8 +41,8 @@ html {
     border: 8px solid #444; /* Parte gris del spinner */
     border-top: 8px solid #00ff73; /* Parte verde brillante que gira */
     border-radius: 50%;
-    width: 70px;
-    height: 70px;
+    width: 63px; /* AJUSTE PARA ZOOM 100% (antes 70px) */
+    height: 63px; /* AJUSTE PARA ZOOM 100% (antes 70px) */
     animation: girar 1s linear infinite; /* Animación de giro */
 }
 
@@ -61,7 +61,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 3%;
+    padding: 13px 3%; /* AJUSTE PARA ZOOM 100% (antes 15px) */
     background-color: transparent; /* Transparente por defecto */
     transition: background-color 0.3s ease;
 }
@@ -73,7 +73,7 @@ header.scrolled {
 }
 
 .logo {
-    font-size: 30px;
+    font-size: 27px; /* AJUSTE PARA ZOOM 100% (antes 30px) */
     font-weight: 800;
     color: white;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra para el logo para mejor legibilidad */
@@ -84,8 +84,8 @@ header.scrolled {
 }
 
 .navlist a {
-    margin-left: 60px;
-    font-size: 15px;
+    margin-left: 54px; /* AJUSTE PARA ZOOM 100% (antes 60px) */
+    font-size: 14px; /* AJUSTE PARA ZOOM 100% (antes 15px) */
     font-weight: 600;
     border-bottom: 2px solid transparent;
     transition: all .5s ease;
@@ -99,7 +99,7 @@ header.scrolled {
 
 #menu-icon {
     display: none; /* Oculto por defecto, se muestra en móviles */
-    font-size: 35px;
+    font-size: 32px; /* AJUSTE PARA ZOOM 100% (antes 35px) */
     z-index: 1001; /* Asegura que el icono esté por encima del navlist */
     cursor: pointer;
 }
@@ -121,9 +121,9 @@ header.scrolled {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Dos columnas para texto e imagen */
     align-items: center;
-    gap: 2rem;
+    gap: 1.8rem; /* AJUSTE PARA ZOOM 100% (antes 2rem) */
     background-color: rgba(0, 0, 0, 0.3); /* Un 30% de negro transparente sobre el fondo de pasto */
-    padding-top: 80px; /* Espacio para el header fijo */
+    padding-top: 72px; /* AJUSTE PARA ZOOM 100% (antes 80px) */
     padding-left: 8%;
     padding-right: 8%;
 }
@@ -137,13 +137,13 @@ section {
 .hero-text {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; 
+    align-items: flex-start;
     justify-content: center;
-    text-align: left; 
+    text-align: left;
     height: 100%;
-    min-width: 320px;
-    max-width: 600px;
-    gap: 10px; 
+    min-width: 288px; /* AJUSTE PARA ZOOM 100% (antes 320px) */
+    max-width: 540px; /* AJUSTE PARA ZOOM 100% (antes 600px) */
+    gap: 9px; /* AJUSTE PARA ZOOM 100% (antes 10px) */
 }
 
 .hero-text h5,
@@ -156,40 +156,40 @@ section {
 
 .hero-text h5,
 .hero-text h4 {
-    margin-bottom: 10px;
+    margin-bottom: 9px; /* AJUSTE PARA ZOOM 100% (antes 10px) */
     font-weight: 600;
     letter-spacing: 1px;
 }
 
 .hero-text h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 50px;
+    font-size: 45px; /* AJUSTE PARA ZOOM 100% (antes 50px) */
     line-height: 1.2; /* Ajustado para mejor legibilidad */
-    margin: 0 0 20px 0;
+    margin: 0 0 18px 0; /* AJUSTE PARA ZOOM 100% (antes 20px) */
     font-weight: 700;
-     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
 .hero-text p {
-    font-size: 20px;
-    margin-bottom: 30px;
+    font-size: 18px; /* AJUSTE PARA ZOOM 100% (antes 20px) */
+    margin-bottom: 27px; /* AJUSTE PARA ZOOM 100% (antes 30px) */
     line-height: 1.7;
     max-width: 90%;
-     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
 .hero-text a {
     display: inline-block;
     background-color: #4d4d4d; /* Color gris oscuro para los botones */
     border: 1px solid transparent;
-    padding: 15px 30px;
+    padding: 13px 27px; /* AJUSTE PARA ZOOM 100% (antes 15px 30px) */
     line-height: 1.4;
-    font-size: 14px;
+    font-size: 13px; /* AJUSTE PARA ZOOM 100% (antes 14px) */
     font-weight: 500;
     border-radius: 30px;
     text-transform: uppercase;
     transition: all .5s ease;
-    margin-right: 20px;
+    margin-right: 18px; /* AJUSTE PARA ZOOM 100% (antes 20px) */
     color: white;
     text-shadow: none; /* No sombra en los botones para que el fondo se vea limpio */
 }
@@ -212,8 +212,8 @@ section {
 }
 
 .hero-img img {
-    width: 450px;
-    margin: 10% 0 0 17%;
+    width: 405px; /* AJUSTE PARA ZOOM 100% (antes 450px) */
+    margin: 9% 0 0 17%; /* AJUSTE PARA ZOOM 100% (antes 10%) */
     height: auto;
     transition: all 1.5s ease-in-out;
 }
@@ -231,8 +231,8 @@ section {
 
 .icons i {
     display: block;
-    margin: 26px 0;
-    font-size: 24px;
+    margin: 23px 0; /* AJUSTE PARA ZOOM 100% (antes 26px) */
+    font-size: 22px; /* AJUSTE PARA ZOOM 100% (antes 24px) */
     transition: all .5s ease;
     color: white;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra para los íconos */
@@ -251,8 +251,8 @@ section {
 
 .scroll-down i {
     display: block;
-    padding: 12px;
-    font-size: 30px;
+    padding: 11px; /* AJUSTE PARA ZOOM 100% (antes 12px) */
+    font-size: 27px; /* AJUSTE PARA ZOOM 100% (antes 30px) */
     background-color: #1a6f41;
     border-radius: 30px;
     transition: all .5s ease;
@@ -272,7 +272,7 @@ section {
 /* --- SECCIÓN ¿DÓNDE ESTAMOS? (donde-estamos.html) --- */
 /* Contenedor principal de la sección de sedes */
 .sedes-container {
-    padding: 100px 0 60px 0; /* Padding superior para dejar espacio al header fijo, padding inferior para el contenido */
+    padding: 90px 0 54px 0; /* AJUSTE PARA ZOOM 100% (antes 100px 0 60px 0) */
     background-color: rgba(0, 0, 0, 0.7); /* Un fondo oscuro semitransparente para esta sección */
     color: white;
     text-align: center;
@@ -281,15 +281,15 @@ section {
 }
 
 .sedes-container h2 {
-    font-size: 42px; 
-    margin-bottom: 10px;
+    font-size: 38px; /* AJUSTE PARA ZOOM 100% (antes 42px) */
+    margin-bottom: 9px; /* AJUSTE PARA ZOOM 100% (antes 10px) */
     padding: 0 5%; /* Padding horizontal para el texto, evita que se pegue a los bordes */
     color: #28a745; /* Color del título para que resalte */
 }
 
 .sedes-container p {
-    font-size: 19px;
-    margin-bottom: 20px;
+    font-size: 17px; /* AJUSTE PARA ZOOM 100% (antes 19px) */
+    margin-bottom: 18px; /* AJUSTE PARA ZOOM 100% (antes 20px) */
     padding: 0 5%; /* Padding horizontal para el texto */
     line-height: 1.5; /* Espaciado entre líneas para mejor lectura */
 }
@@ -298,9 +298,9 @@ section {
 .botones-sedes {
     display: flex;
     justify-content: center; /* Centra los botones horizontalmente */
-    gap: 20px; /* Espacio entre los botones */
-    margin: 40px auto; /* Margen superior e inferior para separar de los textos, auto para centrar */
-    max-width: 800px; /* Limita el ancho máximo del contenedor de botones */
+    gap: 18px; /* AJUSTE PARA ZOOM 100% (antes 20px) */
+    margin: 36px auto; /* AJUSTE PARA ZOOM 100% (antes 40px) */
+    max-width: 720px; /* AJUSTE PARA ZOOM 100% (antes 800px) */
     flex-wrap: wrap; /* Permite que los botones se envuelvan a la siguiente línea en pantallas pequeñas */
     padding: 0 5%; /* Padding horizontal para evitar que se peguen a los bordes en móviles */
 }
@@ -309,14 +309,14 @@ section {
 .boton-sede {
     background-color: #333; /* Color de fondo oscuro por defecto */
     color: white;
-    padding: 15px 30px;
+    padding: 13px 27px; /* AJUSTE PARA ZOOM 100% (antes 15px 30px) */
     border: 2px solid #28a745; /* Borde verde para los botones */
     border-radius: 8px; /* Bordes redondeados */
     cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
-    font-size: 1.1em;
+    font-size: 1em; /* Se mantiene en em para flexibilidad */
     font-weight: 600;
     transition: all 0.3s ease; /* Transición suave para los efectos hover y activo */
-    min-width: 200px; /* Ancho mínimo para que los botones se vean bien */
+    min-width: 180px; /* AJUSTE PARA ZOOM 100% (antes 200px) */
     text-transform: uppercase; /* Texto en mayúsculas */
     letter-spacing: 0.5px; /* Espaciado entre letras */
 }
@@ -338,8 +338,8 @@ section {
 /* Contenedor general de los mapas y su información */
 .mapas-container {
     width: 90%; /* Ocupa el 90% del ancho de la sección principal */
-    max-width: 1200px; /* Limita el ancho máximo para pantallas muy grandes */
-    margin: 40px auto; /* Centra el contenedor horizontalmente y añade margen vertical */
+    max-width: 1080px; /* AJUSTE PARA ZOOM 100% (antes 1200px) */
+    margin: 36px auto; /* AJUSTE PARA ZOOM 100% (antes 40px) */
     overflow: hidden; /* Importante para que el border-radius se aplique correctamente al contenido interno */
     border-radius: 10px; /* Bordes redondeados para el contenedor del mapa */
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.7); /* Sombra grande para el mapa, dándole profundidad */
@@ -374,11 +374,11 @@ section {
 /* Estilos para la información de dirección y modalidades debajo del mapa */
 .mapa-sede p {
     background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro para la información */
-    padding: 20px;
+    padding: 18px; /* AJUSTE PARA ZOOM 100% (antes 20px) */
     margin-top: 0; /* Elimina el margen superior para que se pegue al mapa */
     border-bottom-left-radius: 10px; /* Bordes inferiores redondeados */
     border-bottom-right-radius: 10px;
-    font-size: 1.05em;
+    font-size: 0.95em; /* AJUSTE PARA ZOOM 100% (antes 1.05em) */
     color: #eee; /* Color de texto ligeramente más claro */
 }
 
@@ -388,31 +388,31 @@ section {
 
 /* --- Estilos para la sección de Patrocinadores (Sponsors) --- */
 .sponsors-section {
-    padding: 80px 8% 80px;
+    padding: 72px 8% 72px; /* AJUSTE PARA ZOOM 100% (antes 80px) */
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5); /* Overlay semitransparente sobre el fondo de pasto */
     color: white;
 }
 
 .sponsors-section h2 {
-    font-size: 40px;
-    margin-bottom: 15px;
+    font-size: 36px; /* AJUSTE PARA ZOOM 100% (antes 40px) */
+    margin-bottom: 14px; /* AJUSTE PARA ZOOM 100% (antes 15px) */
     font-weight: 700;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para el título de sponsors */
 }
 
 .sponsors-section p {
-    font-size: 18px;
-    margin-bottom: 50px;
+    font-size: 16px; /* AJUSTE PARA ZOOM 100% (antes 18px) */
+    margin-bottom: 45px; /* AJUSTE PARA ZOOM 100% (antes 50px) */
     opacity: 0.8;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra para el texto de sponsors */
 }
 
 .sponsors-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Columnas responsivas */
-    gap: 30px;
-    max-width: 1200px;
+    grid-template-columns: repeat(auto-fit, minmax(108px, 1fr)); /* AJUSTE PARA ZOOM 100% (antes 120px) */
+    gap: 27px; /* AJUSTE PARA ZOOM 100% (antes 30px) */
+    max-width: 1080px; /* AJUSTE PARA ZOOM 100% (antes 1200px) */
     margin: 0 auto;
     align-items: center;
     justify-content: center;
@@ -422,7 +422,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 9px; /* AJUSTE PARA ZOOM 100% (antes 10px) */
     border-radius: 5px;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -435,7 +435,7 @@ section {
 .sponsor-item img {
     max-width: 100%;
     height: auto;
-    max-height: 80px;
+    max-height: 72px; /* AJUSTE PARA ZOOM 100% (antes 80px) */
     filter: grayscale(100%) brightness(200%); /* Hace los logos grises y brillantes para un look uniforme */
     opacity: 0.7;
     transition: filter 0.3s ease, opacity 0.3s ease;
@@ -451,7 +451,7 @@ footer {
     background-color: #000000; /* Negro sólido */
     background-image: none; /* Asegura que no se herede ninguna imagen de fondo */
     color: #e0e0e0; /* Un gris claro para el texto */
-    padding: 60px 8% 30px; /* Padding superior, lateral, inferior */
+    padding: 54px 8% 27px; /* AJUSTE PARA ZOOM 100% (antes 60px 8% 30px) */
     border-top: 1px solid rgba(255, 255, 255, 0.1); /* Una línea sutil en la parte superior */
     text-align: center;
     position: relative;
@@ -460,21 +460,21 @@ footer {
 
 .footer-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Columnas flexibles */
-    gap: 40px; /* Espacio entre las secciones del footer */
-    max-width: 1200px; /* Ancho máximo del contenedor */
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr)); /* AJUSTE PARA ZOOM 100% (antes 250px) */
+    gap: 36px; /* AJUSTE PARA ZOOM 100% (antes 40px) */
+    max-width: 1080px; /* AJUSTE PARA ZOOM 100% (antes 1200px) */
     margin: 0 auto; /* Centrar el contenedor */
     text-align: left; /* Alinea el contenido de las secciones a la izquierda */
 }
 
 .footer-section {
-    padding: 15px 0;
+    padding: 13px 0; /* AJUSTE PARA ZOOM 100% (antes 15px) */
 }
 
 .footer-section h3 {
-    font-size: 20px;
+    font-size: 18px; /* AJUSTE PARA ZOOM 100% (antes 20px) */
     font-weight: 700;
-    margin-bottom: 25px;
+    margin-bottom: 23px; /* AJUSTE PARA ZOOM 100% (antes 25px) */
     color: white; /* Títulos un poco más blancos */
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -486,12 +486,12 @@ footer {
 }
 
 .footer-section ul li {
-    margin-bottom: 15px;
+    margin-bottom: 14px; /* AJUSTE PARA ZOOM 100% (antes 15px) */
 }
 
 .footer-section ul li a {
     color: #e0e0e0; /* Color del texto de los enlaces */
-    font-size: 15px;
+    font-size: 14px; /* AJUSTE PARA ZOOM 100% (antes 15px) */
     transition: color 0.3s ease;
     display: flex; /* Para alinear íconos con texto */
     align-items: center;
@@ -503,21 +503,21 @@ footer {
 }
 
 .footer-section ul li a i { /* Estilo para los íconos dentro de los enlaces (ej. WhatsApp) */
-    margin-right: 8px;
-    font-size: 18px;
+    margin-right: 7px; /* AJUSTE PARA ZOOM 100% (antes 8px) */
+    font-size: 16px; /* AJUSTE PARA ZOOM 100% (antes 18px) */
     color: #28a745; /* Color del ícono de WhatsApp (verde) */
 }
 
 .social-icons-footer {
-    margin-top: 25px;
+    margin-top: 23px; /* AJUSTE PARA ZOOM 100% (antes 25px) */
     display: flex;
-    gap: 20px; /* Espacio entre íconos de redes */
+    gap: 18px; /* AJUSTE PARA ZOOM 100% (antes 20px) */
     justify-content: flex-start; /* Alinea los íconos a la izquierda */
 }
 
 .social-icons-footer a {
     color: #e0e0e0; /* Color inicial de los íconos de redes */
-    font-size: 28px;
+    font-size: 25px; /* AJUSTE PARA ZOOM 100% (antes 28px) */
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -527,18 +527,18 @@ footer {
 }
 
 .developer-info p {
-    font-size: 14px;
+    font-size: 13px; /* AJUSTE PARA ZOOM 100% (antes 14px) */
     line-height: 1.6;
-    margin-bottom: 10px;
+    margin-bottom: 9px; /* AJUSTE PARA ZOOM 100% (antes 10px) */
     color: #b0b0b0; /* Un gris un poco más oscuro para la info del desarrollador */
 }
 
 /* Última línea del footer (derechos de autor y desarrollado por) */
 .developer-info p:last-child {
-    margin-top: 20px;
+    margin-top: 18px; /* AJUSTE PARA ZOOM 100% (antes 20px) */
     border-top: 1px solid rgba(255, 255, 255, 0.05); /* Línea divisoria muy sutil */
-    padding-top: 15px;
-    font-size: 13px;
+    padding-top: 14px; /* AJUSTE PARA ZOOM 100% (antes 15px) */
+    font-size: 12px; /* AJUSTE PARA ZOOM 100% (antes 13px) */
     text-align: center; /* Centrar el copyright si el grid lo permite */
     color: #909090;
 }
@@ -552,20 +552,20 @@ footer {
     }
 
     .hero {
-        padding-top: 70px; /* Ajuste para tablets */
+        padding-top: 63px; /* AJUSTE PARA ZOOM 100% (antes 70px) */
         padding-left: 5%;
         padding-right: 5%;
     }
 
     .hero-text {
-        margin-top: 4vh;
-        max-width: 95vw;
+        margin-top: 3.6vh; /* AJUSTE PARA ZOOM 100% (antes 4vh) */
+        max-width: 85.5vw; /* AJUSTE PARA ZOOM 100% (antes 95vw) */
         text-align: center;
         align-items: center;
     }
 
     .hero-text h1 {
-        font-size: 40px;
+        font-size: 36px; /* AJUSTE PARA ZOOM 100% (antes 40px) */
     }
 
     .hero-img {
@@ -573,18 +573,18 @@ footer {
     }
 
     .hero-img img {
-        width: 80%;
-        max-width: 400px;
-        margin: 10% auto 0 auto;
+        width: 72%; /* AJUSTE PARA ZOOM 100% (antes 80%) */
+        max-width: 360px; /* AJUSTE PARA ZOOM 100% (antes 400px) */
+        margin: 9% auto 0 auto; /* AJUSTE PARA ZOOM 100% (antes 10%) */
     }
 
     .hero-text p {
-        font-size: 14px;
+        font-size: 13px; /* AJUSTE PARA ZOOM 100% (antes 14px) */
         max-width: 100%;
     }
 
     .hero-text a {
-        margin: 10px;
+        margin: 9px; /* AJUSTE PARA ZOOM 100% (antes 10px) */
     }
 
     .icons {
@@ -593,12 +593,12 @@ footer {
         transform: none;
         display: flex;
         justify-content: center;
-        padding: 20px 0;
+        padding: 18px 0; /* AJUSTE PARA ZOOM 100% (antes 20px) */
         width: 100%;
     }
 
     .icons i {
-        margin: 0 15px;
+        margin: 0 14px; /* AJUSTE PARA ZOOM 100% (antes 15px) */
     }
 
     .scroll-down {
@@ -607,45 +607,45 @@ footer {
 
     /* Media Queries para la sección de Patrocinadores */
     .sponsors-section {
-        padding: 60px 5% 60px;
+        padding: 54px 5% 54px; /* AJUSTE PARA ZOOM 100% (antes 60px) */
     }
     .sponsors-section h2 {
-        font-size: 32px;
+        font-size: 29px; /* AJUSTE PARA ZOOM 100% (antes 32px) */
     }
     .sponsors-section p {
-        font-size: 16px;
-        margin-bottom: 30px;
+        font-size: 14px; /* AJUSTE PARA ZOOM 100% (antes 16px) */
+        margin-bottom: 27px; /* AJUSTE PARA ZOOM 100% (antes 30px) */
     }
     .sponsors-grid {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); /* AJUSTE PARA ZOOM 100% (antes 100px) */
+        gap: 18px; /* AJUSTE PARA ZOOM 100% (antes 20px) */
     }
     .sponsor-item img {
-        max-height: 60px;
+        max-height: 54px; /* AJUSTE PARA ZOOM 100% (antes 60px) */
     }
 
     /* Media Queries para la nueva sección de sedes con botones */
     .sedes-container {
-        padding: 80px 5% 60px 5%; /* Ajusta el padding en tablets */
+        padding: 72px 5% 54px 5%; /* AJUSTE PARA ZOOM 100% (antes 80px 5% 60px 5%) */
     }
     .sedes-container h2 {
-        font-size: 38px;
+        font-size: 34px; /* AJUSTE PARA ZOOM 100% (antes 38px) */
     }
     .sedes-container p {
-        font-size: 17px;
+        font-size: 15px; /* AJUSTE PARA ZOOM 100% (antes 17px) */
     }
     .botones-sedes {
-        gap: 15px;
-        max-width: 90%;
+        gap: 14px; /* AJUSTE PARA ZOOM 100% (antes 15px) */
+        max-width: 85.5%; /* AJUSTE PARA ZOOM 100% (antes 90%) */
     }
     .boton-sede {
-        padding: 12px 25px;
-        font-size: 1em;
-        min-width: 180px;
+        padding: 11px 23px; /* AJUSTE PARA ZOOM 100% (antes 12px 25px) */
+        font-size: 0.9em; /* Se mantiene en em para flexibilidad */
+        min-width: 162px; /* AJUSTE PARA ZOOM 100% (antes 180px) */
     }
     .mapas-container {
-        max-width: 700px;
-        width: 95%; /* Un poco más ancho en tablets */
+        max-width: 630px; /* AJUSTE PARA ZOOM 100% (antes 700px) */
+        width: 85.5%; /* AJUSTE PARA ZOOM 100% (antes 95%) */
     }
     /* La proporción 16:9 se mantiene con padding-bottom */
 }
@@ -661,15 +661,15 @@ footer {
     }
 
     header {
-        padding: 15px 5%;
+        padding: 13px 5%; /* AJUSTE PARA ZOOM 100% (antes 15px) */
     }
 
     .hero {
         background-color: rgba(0, 0, 0, 0.5);
         grid-template-columns: 1fr; /* Una sola columna en móviles */
         min-height: auto;
-        padding-top: 80px;
-        padding-bottom: 50px;
+        padding-top: 72px; /* AJUSTE PARA ZOOM 100% (antes 80px) */
+        padding-bottom: 45px; /* AJUSTE PARA ZOOM 100% (antes 50px) */
         padding-left: 5%;
         padding-right: 5%;
     }
@@ -683,8 +683,8 @@ footer {
     }
 
     .hero-text h1 {
-        font-size: 38px;
-        margin-bottom: 15px;
+        font-size: 34px; /* AJUSTE PARA ZOOM 100% (antes 38px) */
+        margin-bottom: 14px; /* AJUSTE PARA ZOOM 100% (antes 15px) */
     }
 
     .hero-text h5,
@@ -693,34 +693,34 @@ footer {
     }
 
     .hero-text p {
-        font-size: 13px;
-        margin-bottom: 20px;
+        font-size: 12px; /* AJUSTE PARA ZOOM 100% (antes 13px) */
+        margin-bottom: 18px; /* AJUSTE PARA ZOOM 100% (antes 20px) */
     }
 
     .hero-text a {
         width: 90%;
         text-align: center;
-        margin: 10px auto;
+        margin: 9px auto; /* AJUSTE PARA ZOOM 100% (antes 10px) */
     }
 
     .navlist {
         position: absolute;
         top: 100%;
         right: -100%; /* Oculto fuera de la pantalla */
-        width: 200px; /* Ancho del menú móvil */
+        width: 180px; /* AJUSTE PARA ZOOM 100% (antes 200px) */
         height: auto;
         background-color: #0e590ee1; /* Fondo del menú móvil */
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 30px 20px;
+        padding: 27px 18px; /* AJUSTE PARA ZOOM 100% (antes 30px 20px) */
         transition: transform 0.5s ease-out; /* Animación de deslizamiento */
     }
 
     .navlist a {
         margin-left: 0;
         display: block;
-        margin: 7px 0;
+        margin: 6px 0; /* AJUSTE PARA ZOOM 100% (antes 7px) */
     }
 
     #menu-toggle:checked + label.menu-icon-action + ul {
@@ -734,74 +734,74 @@ footer {
         transform: none;
         display: flex;
         justify-content: center;
-        padding: 20px 0;
+        padding: 18px 0; /* AJUSTE PARA ZOOM 100% (antes 20px) */
         width: 100%;
-        margin-top: 20px;
+        margin-top: 18px; /* AJUSTE PARA ZOOM 100% (antes 20px) */
     }
 
     .icons i {
-        margin: 0 10px;
+        margin: 0 9px; /* AJUSTE PARA ZOOM 100% (antes 10px) */
     }
 
     /* Media Queries para la sección de Patrocinadores en móviles */
     .sponsors-section {
-        padding: 40px 5% 40px;
+        padding: 36px 5% 36px; /* AJUSTE PARA ZOOM 100% (antes 40px) */
     }
     .sponsors-section h2 {
-        font-size: 28px;
+        font-size: 25px; /* AJUSTE PARA ZOOM 100% (antes 28px) */
     }
     .sponsors-section p {
-        font-size: 14px;
-        margin-bottom: 20px;
+        font-size: 13px; /* AJUSTE PARA ZOOM 100% (antes 14px) */
+        margin-bottom: 18px; /* AJUSTE PARA ZOOM 100% (antes 20px) */
     }
     .sponsors-grid {
-        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-        gap: 15px;
+        grid-template-columns: repeat(auto-fit, minmax(72px, 1fr)); /* AJUSTE PARA ZOOM 100% (antes 80px) */
+        gap: 14px; /* AJUSTE PARA ZOOM 100% (antes 15px) */
     }
     .sponsor-item img {
-        max-height: 50px;
+        max-height: 45px; /* AJUSTE PARA ZOOM 100% (antes 50px) */
     }
 
     /* Ajustes específicos para la sección de sedes en móviles */
     .sedes-container {
-        padding: 60px 5% 40px 5%; /* Ajusta el padding en móviles */
+        padding: 54px 5% 36px 5%; /* AJUSTE PARA ZOOM 100% (antes 60px 5% 40px 5%) */
     }
     .sedes-container h2 {
-        font-size: 32px;
+        font-size: 29px; /* AJUSTE PARA ZOOM 100% (antes 32px) */
     }
     .sedes-container p {
-        font-size: 16px;
+        font-size: 14px; /* AJUSTE PARA ZOOM 100% (antes 16px) */
     }
     .botones-sedes {
         flex-direction: column; /* Botones apilados en móviles */
-        gap: 10px;
+        gap: 9px; /* AJUSTE PARA ZOOM 100% (antes 10px) */
         max-width: 100%; /* Ocupan todo el ancho */
     }
     .boton-sede {
         width: 100%; /* Que ocupen todo el ancho disponible */
         min-width: unset; /* Reinicia el min-width */
-        padding: 10px 15px; /* Ajusta padding para móviles */
-        font-size: 0.95em;
+        padding: 9px 14px; /* AJUSTE PARA ZOOM 100% (antes 10px 15px) */
+        font-size: 0.9em; /* Se mantiene en em para flexibilidad */
     }
     .mapas-container {
         width: 100%; /* Ocupa todo el ancho disponible en móviles */
-        padding: 10px; /* Reduce el padding interno */
+        padding: 9px; /* AJUSTE PARA ZOOM 100% (antes 10px) */
         border-radius: 5px; /* Bordes un poco menos redondeados */
     }
     .mapa-sede p {
-        font-size: 0.9em; /* Reduce el tamaño de fuente de la info del mapa */
-        padding: 12px; /* Reduce el padding de la info */
+        font-size: 0.8em; /* AJUSTE PARA ZOOM 100% (antes 0.9em) */
+        padding: 11px; /* AJUSTE PARA ZOOM 100% (antes 12px) */
     }
 }
 
 @media (max-width: 480px) {
     .sedes-container h2 {
-        font-size: 26px;
+        font-size: 23px; /* AJUSTE PARA ZOOM 100% (antes 26px) */
     }
     .sedes-container p {
-        font-size: 14px;
+        font-size: 13px; /* AJUSTE PARA ZOOM 100% (antes 14px) */
     }
     .boton-sede {
-        font-size: 0.9em;
+        font-size: 0.8em; /* AJUSTE PARA ZOOM 100% (antes 0.9em) */
     }
 }
